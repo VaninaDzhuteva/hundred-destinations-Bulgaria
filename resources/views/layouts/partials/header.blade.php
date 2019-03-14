@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="/">
+<nav class="navbar navbar-expand-lg p-0">
+    <a class="navbar-brand ml-3" href="/">
         <img src="{{ asset('img/logo.png') }}" alt="Bulgarian Destinations" class="logo">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,11 +12,11 @@
                 <a class="nav-link" href="/">Начало <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Стоте обекта</a>
+                <a class="nav-link" href="{{ asset('destinations') }}">Стоте обекта</a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Класации</a>
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Класации</a>
             </li>
 {{--            <form class="form-inline my-2 my-lg-0">--}}
 {{--                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">--}}

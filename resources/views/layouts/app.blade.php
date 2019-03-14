@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Стоте Национални Обекта</title>
+    <title>@yield('title', 'Стоте Национални обекта')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -24,7 +24,7 @@
         <header>
             @include('layouts.partials.header')
         </header>
-        <main class="py-4">
+        <main class="">
             @yield('content')
         </main>
 

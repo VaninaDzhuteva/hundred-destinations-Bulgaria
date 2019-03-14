@@ -2,8 +2,33 @@
   width: 60px;
 }
 
+.navbar {
+  border-bottom: 1px solid $blue;
+  box-shadow: 1px 1px 17px 0px rgba(0,0,0,0.75);
+}
+
 .navbar-nav {
+
   .nav-item {
-    padding-right: 30px;
+    margin-right: 35px;
+    background: linear-gradient(to right, $blue 50%, $white 50%) right bottom;
+    background-size: 200% 100%;
+    border-radius: 3px;
+    transition: all .4s ease-out;
+
+    &:hover {
+      background-position: left bottom;
+    }
+  }
+
+   .nav-link{
+     padding: 22px 20px;
+     color: $blue;
+     transition: all .6s ease-out;
+
+    &:hover {
+      color: $white;
+    }
   }
 }
+

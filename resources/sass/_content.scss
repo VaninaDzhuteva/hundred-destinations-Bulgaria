@@ -1,0 +1,92 @@
+@import "mixins";
+
+.bg-secondary {
+  background-color: #fafafa !important;
+}
+.destinations-container {
+  //background: #f7f7f7;
+
+  .destination {
+    position: relative;
+    height: 300px;
+    margin: 10px;
+    background: $white;
+    border: 1px solid $colorSecondary;
+    border-radius: 6px;
+  }
+
+  .destination-number {
+    position: absolute;
+    left: 0px;
+    padding: 2px 10px;
+    border-radius: 3px;
+    color: $colorLight;
+    @include gradient(150deg, $list1);
+  }
+
+  .title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    color: $white;
+    opacity: 0.9;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    @include gradient(150deg, $list1);
+  }
+
+  .img-container {
+
+    img {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin-top: 40px;
+      border-radius: 50%;
+      $border: 2px;
+      background-clip: padding-box;
+      border: solid $border $colorPrimary;
+      box-shadow: 3px 1px 1px -1px #b3b3b3;
+    }
+
+
+    &__view-more {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      width: 120px;
+      height: 120px;
+      margin-top: 40px;
+      transition: opacity .2s;
+      opacity: 0;
+      color: $white;
+      text-decoration: none;
+      border-radius: 50%;
+      @include gradient(150deg, $list2);
+    }
+
+      &:hover .img-container__view-more{
+          opacity: 1;
+        }
+
+    //background-image: linear-gradient(-225deg, #69EACB 0%, #EACCF8 48%, #6654F1 100%);
+    //background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    //background: linear-gradient(150deg, #003399, #8080ff, #66ffc2);
+    //background: rgb(161,7,130);
+    //background: linear-gradient(287deg, rgba(161,7,130,1) 0%, rgba(253,29,65,1) 50%, rgba(251,200,63,1) 100%);
+    //background: #3A1C71;  /* fallback for old browsers */
+    //background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    //background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    //background: #C33764;  /* fallback for old browsers */
+    //background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    //background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+}

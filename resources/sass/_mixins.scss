@@ -1,0 +1,21 @@
+
+//$list1: $blue, $green, $light-green;
+//$list2: rgba(36, 36, 143, 0.3), rgba(31, 122, 122, 0.3), rgba(204, 255, 204, 0.3);
+//$list3: rgba(161,7,130,1) 0%, rgba(253,29,65,1) 50%, rgba(251,200,63,1) 100%;
+//$list4: #3A1C71,  #D76D77, #FFAF7B;
+//$list6: #191654, #43C6AC;
+//$list8: #360033, #0b8793;
+//$list5: #1D2671, #C33764;
+
+$list1: #000428, #004e92;
+$list2: rgba(0, 4, 40, 0.4), rgba(0, 78, 146, 0.4);
+
+$list3: #f09819, #edde5d;
+
+
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+  background: -moz-linear-gradient($direction, $list);
+  background: -o-linear-gradient($direction, $list);
+  background: linear-gradient($direction, $list);
+}

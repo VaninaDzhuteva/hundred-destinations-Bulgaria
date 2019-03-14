@@ -27,3 +27,8 @@ Auth::routes();
 //});
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/destinations', 'DestinationsController@index')->name('destinations');
+Route::post('/destinations', 'DestinationsController@store');
+Route::get('/destinations/{id}', 'DestinationsController@show');
+
