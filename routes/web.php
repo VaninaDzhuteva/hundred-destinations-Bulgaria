@@ -17,14 +17,14 @@ Route::get('/', function () {
 
 Auth::routes();
 
-//Route::get('login','Auth\LoginController@showLoginForm')->name('login');
-//Route::post('login', 'Auth\LoginController@login');
-//
-//Route::group(['middleware' => 'auth'], function () {
-//    Route::get('register','Auth\RegisterController@showRegistrationForm')->name('register');
-//    Route::post('register','Auth\RegisterController@register');
-//    Route::post('logout','Auth\LoginController@logout')->name('logout');
-//});
+Route::get('login','Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+
+Route::group(['middleware' => 'auth'], function () {
+   Route::get('register','Auth\RegisterController@showRegistrationForm')->name('register');
+   Route::post('register','Auth\RegisterController@register');
+   Route::post('logout','Auth\LoginController@logout')->name('logout');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
 

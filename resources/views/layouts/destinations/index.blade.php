@@ -6,8 +6,8 @@
     <div class="container-fluid bg-secondary">
         <div class="row py-5">
             <div class="col-12">
-                <div class="destinations-container row p-4">
-                    @foreach($destinations as $destination)
+                <!-- <div class="destinations-container row p-4"> -->
+                    <!-- @foreach($destinations as $destination)
 
                         <div class="destination col-lg-2 text-center p-0">
 
@@ -23,7 +23,7 @@
 
                         </div>
 
-                    @endforeach
+                    @endforeach -->
                 </div>
             </div>
         </div>
